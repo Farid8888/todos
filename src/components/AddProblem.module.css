@@ -1,0 +1,72 @@
+.backDrop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(128, 128, 128, 0.557);
+    z-index: 200;
+}
+
+.centered{
+    position: fixed;
+    top:20%;
+    left:24%;
+    padding: 10px;
+    background-color: white;
+    width: 41rem;
+    max-width: 70%;
+    height: 15rem;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    border-radius: 1.3rem;
+    z-index: 300;
+}
+
+
+.centered form{
+display: flex;
+flex-direction: column;
+width: 30rem;
+margin-top: 4rem;
+}
+
+.centered label{
+margin-bottom: 10px;
+font-family:'Kalam', cursive ;
+font-weight: bold;
+}
+.centered input{
+    padding: 10px 3px;
+    border: 1px solid rgba(47, 56, 231, 0.32);
+    border-radius: 4px;
+    outline: none;
+}
+.centered input.err{
+    border: 1px solid red;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+.btn button{
+    background-color: rgb(47, 56, 231);
+    color: white;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    background-color: rgb(133, 133, 198);
+}
+
+.cancel{
+text-align: end;
+   width: 100%;
+   margin-top:0px ;
+   cursor: pointer;
+}
