@@ -72,8 +72,10 @@ case ('ADDPR'):
     const newAmount = state.totalAmount - 1
     return {...state,problems:newPr,activeProblems:newActPr,totalAmount:newAmount}
 case ('CLEAR'):
+
 const arr =[]
 state.problems.forEach(pr=>arr.push({...pr,showIcon:false}))
+// const arr =state.problems.map(pr=>({...pr,showIcon:false}))
     return {...state,problems:arr,totalAmount:state.problems.length,completedProblems:[],activeProblems:state.problems}
 default:return state
 }
